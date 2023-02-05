@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              background-image: url("https://img.freepik.com/free-photo/side-view-dark-purple-color-iris-flowers-isolated-white-background-with-copy-space_141793-8064.jpg?w=2000");
+              background-repeat: no-repeat;
+              background-size: 100% 165%;
+            }
+            </style>
+    </head>
+<body>
+    <center>
+        <h1 style="color: rgb(206, 147, 10);"> IRIS FLOWER SPECIES PREDICTION </h1><br>
+            <form method="POST" , action="{{url_for('result')}}"><br>
+            Sepal Length : <input type="text" , name='Sepal Length', placeholder="Enter SepalLength in Cm" required><br><br>
+            Sepal Width : <input type="text" , name='Sepal Width' , placeholder="Enter SepalWidth in Cm " required><br><br>
+            Petal Length: <input type="text" , name='Petal Length' , placeholder="Enter PetalLength in Cm" required><br><br>
+            Petal Width : <input type="text" , name='Petal Width' , placeholder="Enter PetalWidth in Cm" required><br><br>
+                        <input type="submit" , value='predict'></form><br><br>
+    </center>
+</body>
+</html>
