@@ -7,12 +7,11 @@ import config
 app=Flask(__name__)
 
 @app.route("/") #home API
-
 def base():
     return render_template("index.html")
 
-@app.route("/predict",methods=["POST"])
 
+@app.route("/predict",methods=["POST"])
 def result():
     SepalLengthCm = request.form["Sepal Length"]
     SepalWidthCm = request.form["Sepal Width"]
